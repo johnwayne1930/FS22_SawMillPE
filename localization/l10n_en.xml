@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<l10n>
+    <!-- <translationContributors></translationContributors> -->
+    <texts>
+        <text name="function_sawmill" text="A sawmill that produces boards and other products from wood." />
+        <text name="fillType_planks" text="Planks" />
+        <text name="fillType_prefabwall" text="Prefabwall" />
+        <text name="fillType_woodbeam" text="Woodbeam" />
+    </texts>
+</l10n>

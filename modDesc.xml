@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="72">
+    <author>johnwayne1930</author>
+    <version>1.0.0.0</version>
+
+	<title>
+		<en>Sawmill PE</en>
+		<de>Sägewerk PE</de>
+	</title>	
+		
+	<description>
+<en><![CDATA[
+The sawmill workers have learned new skills, they can now produce boards, planks, woodbeams and even prefabwalls.
+This Pack consists of three sawmills. Each with separate pallet spawn points for each different product.
+FS22 Platinum Expansion is required.
+
+Price: 150.000 $
+Dayly upkeep: 60 $/day
+Input: Wood
+Output: Boards, Planks, Woodbeam, Prefabwall, Wood chips
+
+]]></en>
+<de><![CDATA[
+Die Sägewerksarbeiter haben neue Fähigkeiten gelernt, sie können nun Bretter, Lange Bretter, Holzbalken und sogar Fertigwände produzieren.
+Dieses Paket besteht aus drei Sägewerken. Jedes mit separaten Paletten-Spawnpunkten für jedes Produkt.
+FS22 Platinum Expansion wird benötigt.
+
+Preis: 150.000 €
+Unterhalt: 60 €/Tag
+Eingang: Holz
+Ausgang: Bretter, Lange Bretter, Holzbalken, Fertigwand, Hackschnitzel
+
+]]></de>
+	</description>
+
+    <iconFilename>icon_sawMillPE.dds</iconFilename>
+
+    <multiplayer supported="true" />
+
+	<dependencies>
+		<dependency>pdlc_forestryPack</dependency>
+	</dependencies>	
+
+    <storeItems>
+        <storeItem xmlFilename="sawMillAlpine/sawMillAlpinePE.xml"/>
+        <storeItem xmlFilename="sawMillFR/sawMillFrPE.xml"/>
+        <storeItem xmlFilename="sawMillUS/sawMillUsPE.xml"/>
+    </storeItems>
+
+    <l10n filenamePrefix="localization/l10n"/>
+
+</modDesc>

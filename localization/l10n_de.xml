@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<l10n>
+    <!-- <translationContributors></translationContributors> -->
+    <texts>
+        <text name="function_sawmill" text="Ein Sägewerk, produziert aus Holz Bretter und andere Produkte." />
+        <text name="fillType_planks" text="Lange Bretter" />
+        <text name="fillType_prefabwall" text="Fertigwand" />
+        <text name="fillType_woodbeam" text="Holzbalken" />
+    </texts>
+</l10n>
