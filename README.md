@@ -1,4 +1,4 @@
-# FS22_SawMill_PE v1.0.0.0
+# FS22_SawMillPE v1.0.0.0
 Mod for Farming Simulator 22 
 
 #### Description
@@ -7,8 +7,8 @@ This Pack consists of three sawmills. Each with separate pallet spawn points for
 FS22 Platinum Expansion is required.
 
 #### Installation manually:
-* download [Latest release](https://github.com/johnwayne1930/FS22_SawMill_PE/releases/latest)
-* put the ZIP file "FS22_SawMill_PE.zip" in the  
+* download [Latest release](https://github.com/johnwayne1930/FS22_SawMillPE/releases/latest)
+* put the ZIP file "FS22_SawMillPE.zip" in the  
 _%\Documents\My Games\FarmingSimulator2022\mods_ directory
 * activate the mod ingame
 
