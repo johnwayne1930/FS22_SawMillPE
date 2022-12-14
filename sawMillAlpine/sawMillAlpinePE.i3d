@@ -274,21 +274,26 @@
           </Shape>
           <Shape shapeId="12" name="occluderMesh" clipDistance="250" nodeId="120" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
           <TransformGroup name="clearAreas" rotation="0 180 0" nodeId="121">
-            <TransformGroup name="clearArea1Start" translation="50 0 15" nodeId="122">
-              <TransformGroup name="clearArea1Width" translation="-75 0 0" nodeId="123"/>
-              <TransformGroup name="clearArea1Height" translation="0 0 -55" rotation="0 -0 6.1572e-14" nodeId="124"/>
+            <TransformGroup name="clearArea1Start" translation="40 0 20" nodeId="122">
+              <TransformGroup name="clearArea1Width" translation="-97 0 0" nodeId="123"/>
+              <TransformGroup name="clearArea1Height" translation="0 0 -50" rotation="0 -0 6.1572e-14" nodeId="124"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="levelAreas" rotation="0 180 0" nodeId="125">
-            <TransformGroup name="levelArea1Start" translation="50 0 15" nodeId="126">
-              <TransformGroup name="levelArea1Width" translation="-75 0 0" nodeId="127"/>
-              <TransformGroup name="levelArea1Height" translation="0 0 -55" nodeId="128"/>
+            <TransformGroup name="levelArea1Start" translation="40 0 20" nodeId="126">
+              <TransformGroup name="levelArea1Width" translation="-97 0 0" nodeId="127"/>
+              <TransformGroup name="levelArea1Height" translation="0 0 -50" nodeId="128"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="indoorAreas" rotation="0 180 0" nodeId="129">
             <TransformGroup name="indoorArea1Start" translation="22 0 10" nodeId="130">
               <TransformGroup name="indoorArea1Width" translation="-45 0 0" nodeId="131"/>
               <TransformGroup name="indoorArea1Height" translation="0 0 -30" nodeId="132"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" nodeId="341">
+            <TransformGroup name="testArea1Start" translation="-19.684 0 -16.5065" nodeId="342">
+              <TransformGroup name="testArea1End" translation="75.1401 7 34.5309" nodeId="343"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="props" nodeId="133">
@@ -348,49 +353,49 @@
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
-      <TransformGroup name="sawMillTrigger" translation="23.4605 0 31.1918" nodeId="172">
-        <Shape shapeId="30" name="infoTrigger" translation="14.8282 1.21929 -11.9154" scale="1.2 1 0.7" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="173" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="sawMillTrigger" translation="23.4605 0 31.192" nodeId="172">
+        <Shape shapeId="30" name="infoTrigger" translation="14.8282 1.21929 -13.332" scale="1.2 1 0.7" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="173" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         <TransformGroup name="tipOcclusionUpdateAreas" translation="0 2.27374e-15 0" nodeId="174">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-55 2.27374e-15 -12" nodeId="175">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="63 -6.82121e-15 20" nodeId="176"/>
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-55.9986 2.27374e-15 -13.6634" nodeId="175">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="79.0374 -6.82121e-15 13.166" nodeId="176"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="collisions" nodeId="177">
           <Shape shapeId="31" name="tipCol" translation="-4.59457 0.183463 -7.3279" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="178" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
-        <TransformGroup name="sellingStation" translation="-23.0804 0 -4.25636" nodeId="179">
+        <TransformGroup name="sellingStation" translation="16.2452 0 -9.82259" nodeId="179">
           <Shape shapeId="32" name="woodTrigger" translation="0 -0.0984835 0" static="true" trigger="true" collisionMask="1090521088" nodeId="180" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">
             <TransformGroup name="unloadTriggerMarker" translation="0 0.201892 0" nodeId="181"/>
           </Shape>
-          <Shape shapeId="33" name="woodSellTrigger" translation="-0.223684 -2.27374e-15 -5.8892" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="182" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="33" name="woodSellTrigger" translation="-7.28409 -2.27374e-15 -4.67743" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="182" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">
             <TransformGroup name="woodSellTriggerMarker" translation="-6.10352e-07 1.34102 -3.05176e-07" nodeId="183"/>
           </Shape>
-          <Shape shapeId="34" name="warningStripes_woodTrigger" translation="0 0.01 0" clipDistance="300" nodeId="184" materialIds="20" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="34" name="warningStripes_woodTrigger" translation="0 0.1 0" clipDistance="300" nodeId="184" materialIds="20" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="sellingStationAINode" translation="0.227827 0 -0.00467792" rotation="0 -118.539 0" nodeId="185"/>
         </TransformGroup>
-        <TransformGroup name="productionPoint" translation="-12.0556 0 -0.214378" nodeId="186">
+        <TransformGroup name="productionPoint" translation="-5.57293 0 -4.54836" nodeId="186">
           <Shape shapeId="35" name="playerTrigger" translation="3 0 -10" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="187" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">
             <TransformGroup name="playerTriggerMarker" translation="-6.10352e-07 1.34102 -3.05176e-07" nodeId="188"/>
           </Shape>
-          <TransformGroup name="teleportNode" translation="3 0 -10" nodeId="189"/>
+          <TransformGroup name="teleportNode" translation="3 0 -6.19997" nodeId="189"/>
         </TransformGroup>
-        <TransformGroup name="palletSpawner" translation="23.1193 0 -12.5945" nodeId="190">
+        <TransformGroup name="palletSpawner" translation="-11.6801 0 -8.19921" nodeId="190">
           <TransformGroup name="spawnSpace1start" translation="-2.8 0 0" nodeId="191">
             <TransformGroup name="spawnSpace1end" translation="6 0 2.27374e-15" nodeId="192"/>
           </TransformGroup>
-          <Shape shapeId="36" name="warningStripes_palletSpawnArea1" translation="0 0.01 0" clipDistance="300" nodeId="193" materialIds="20" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="warningStripes_palletSpawnArea1" translation="0 0.001 0" clipDistance="300" nodeId="193" materialIds="20" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="spawnSpace2start" translation="-10.8 0 0" nodeId="194">
             <TransformGroup name="spawnSpace2end" translation="6 0 2.27374e-15" nodeId="195"/>
           </TransformGroup>
-          <Shape shapeId="36" name="warningStripes_palletSpawnArea2" translation="-8 0.01 0" clipDistance="300" nodeId="196" materialIds="20" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="warningStripes_palletSpawnArea2" translation="-8 0.001 0" clipDistance="300" nodeId="196" materialIds="20" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="spawnSpace3start" translation="-18.8 0 0" nodeId="197">
             <TransformGroup name="spawnSpace3end" translation="6 0 0" nodeId="198"/>
           </TransformGroup>
-          <Shape shapeId="36" name="warningStripes_palletSpawnArea3" translation="-16 0.01 0" clipDistance="300" nodeId="199" materialIds="20" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="warningStripes_palletSpawnArea3" translation="-16 0.001 0" clipDistance="300" nodeId="199" materialIds="20" castsShadows="true" receiveShadows="true"/>
           <TransformGroup name="spawnSpace4start" translation="-26.8 0 0" nodeId="200">
             <TransformGroup name="spawnSpace4end" translation="6 0 2.27374e-15" nodeId="201"/>
           </TransformGroup>
-          <Shape shapeId="36" name="warningStripes_palletSpawnArea4" translation="-24 0.01 0" clipDistance="300" nodeId="202" materialIds="20" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="warningStripes_palletSpawnArea4" translation="-24 0.001 0" clipDistance="300" nodeId="202" materialIds="20" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
         <TransformGroup name="loadingStation" translation="-47.0936 0 -7.95695" nodeId="203">
           <Shape shapeId="37" name="loadTrigger" translation="0 3.62311 0" static="true" trigger="true" collisionMask="1073741824" nodeId="204" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">

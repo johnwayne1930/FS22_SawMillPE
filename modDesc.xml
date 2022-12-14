@@ -10,25 +10,29 @@
 		
 	<description>
 <en><![CDATA[
-The sawmill workers have learned new skills, they can now produce boards, planks, woodbeams and even prefabwalls.
-This Pack consists of three sawmills. Each with separate pallet spawn points for each different product.
-FS22 Platinum Expansion is required.
+Pack with three sawmills that produce boards and wood chips from wood.
+ATTENTION: If a corresponding mod or DLC (e.g. Platinum Expansion) is activated and uses the fillType prefabwall, the sawmills will be replaced by versions that can produce boards, planks, woodbeam, prefabwall and wood chips from wood.
+Ideal addition for productions which e.g. Use planks as input.
+
+This mod requires FS22_A_ProductionRevamp.
 
 Price: 150.000 $
 Dayly upkeep: 60 $/day
-Input: Wood
-Output: Boards, Planks, Woodbeam, Prefabwall, Wood chips
+Input: wood
+Output: boards, wood chips (if fillType prefabwall is present then additional planks, woodbeam, prefabwall)
 
 ]]></en>
 <de><![CDATA[
-Die Sägewerksarbeiter haben neue Fähigkeiten gelernt, sie können nun Bretter, Lange Bretter, Holzbalken und sogar Fertigwände produzieren.
-Dieses Paket besteht aus drei Sägewerken. Jedes mit separaten Paletten-Spawnpunkten für jedes Produkt.
-FS22 Platinum Expansion wird benötigt.
+Pack mit drei Sägewerken welche aus Holz Bretter und Hackschnitzel produzieren.
+ACHTUNG: Wenn ein entsprechender Mod oder DLC (zb. Platinum Expansion) aktiviert ist und den fillType prefabwall verwendet, werden die Sägewerke durch versionen ersetzt welche aus Holz Bretter, Lange Bretter, Holzbalken, Fertigwand und Hackschnitzel produzieren können.
+Ideale ergänzung für Produktionen welche zb. Lange Bretter als Input verwenden.
+
+Dieser Mod benötigt FS22_A_ProductionRevamp.
 
 Preis: 150.000 €
 Unterhalt: 60 €/Tag
 Eingang: Holz
-Ausgang: Bretter, Lange Bretter, Holzbalken, Fertigwand, Hackschnitzel
+Ausgang: Bretter, Hackschnitzel (wenn fillType prefabwall vorhanden dann zusätzlich Lange Bretter, Holzbalken, Fertigwand)
 
 ]]></de>
 	</description>
@@ -38,14 +42,26 @@ Ausgang: Bretter, Lange Bretter, Holzbalken, Fertigwand, Hackschnitzel
     <multiplayer supported="true" />
 
 	<dependencies>
-		<dependency>pdlc_forestryPack</dependency>
+		<dependency>FS22_A_ProductionRevamp</dependency>
 	</dependencies>	
-
+	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/revamp_check.lua"/>
+	</extraSourceFiles>	
+	
     <storeItems>
-        <storeItem xmlFilename="sawMillAlpine/sawMillAlpinePE.xml"/>
-        <storeItem xmlFilename="sawMillFR/sawMillFrPE.xml"/>
-        <storeItem xmlFilename="sawMillUS/sawMillUsPE.xml"/>
+        <storeItem xmlFilename="sawMillUS/sawMillUs.xml" removeWhenFillTypes="PREFABWALL"/>
+        <storeItem xmlFilename="sawMillFR/sawMillFr.xml" removeWhenFillTypes="PREFABWALL"/>
+        <storeItem xmlFilename="sawMillAlpine/sawMillAlpine.xml" removeWhenFillTypes="PREFABWALL"/>
     </storeItems>
+
+    <revamp minVersion="1.3.5.5">
+		<storeItems>
+			<storeItem xmlFilename="sawMillUS/sawMillUsPE.xml" addWhenfillTypes="PREFABWALL"/>
+			<storeItem xmlFilename="sawMillFR/sawMillFrPE.xml" addWhenfillTypes="PREFABWALL"/>
+			<storeItem xmlFilename="sawMillAlpine/sawMillAlpinePE.xml" addWhenfillTypes="PREFABWALL"/>
+		</storeItems>
+	</revamp>
 
     <l10n filenamePrefix="localization/l10n"/>
 

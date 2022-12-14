@@ -26,7 +26,15 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" />
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
 
     <hotspots>
         <hotspot type="PRODUCTION_POINT" linkNode="sellingStation" teleportNode="teleportNode" />
@@ -51,7 +59,7 @@
 
     <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
-            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="grass"/>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="concrete"/>
         </levelAreas>
     </leveling>
 
@@ -70,7 +78,7 @@
 	</ai>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="true">
+        <productions sharedThroughputCapacity="false">
             <production id="boards" name="%s (%s)" params="$l10n_fillType_wood|$l10n_fillType_boards" cyclesPerHour="1" costsPerActiveHour="2">
                 <inputs>
                     <input fillType="WOOD" amount="416" />
@@ -133,7 +141,7 @@
 
         <palletSpawner node="palletSpawner">
             <spawnPlaces>
-                <spawnPlace startNode="spawnSpace1start" fillTypes="BOARDS" />
+                <spawnPlace startNode="spawnSpace1start" fillTypes="BOARDS"/>
                 <spawnPlace startNode="spawnSpace2start" fillTypes="PLANKS"/>
                 <spawnPlace startNode="spawnSpace3start" fillTypes="WOODBEAM"/>
                 <spawnPlace startNode="spawnSpace4start" fillTypes="PREFABWALL"/>
@@ -160,6 +168,8 @@
         <i3dMapping id="indoorArea1Start" node="0>5|0" />
         <i3dMapping id="indoorArea1Width" node="0>5|0|0" />
         <i3dMapping id="indoorArea1Height" node="0>5|0|1" />
+        <i3dMapping id="testArea1Start" node="0>6|0" />
+        <i3dMapping id="testArea1End" node="0>6|0|0" />
         <i3dMapping id="infoTrigger" node="1>0" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="1>1|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="1>1|0|0" />
